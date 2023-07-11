@@ -1,0 +1,14 @@
+{
+  "name": "mooney-portfolio",
+  "version": "1.0.0",
+  "description": "Hunter Mooney - Full-Stack Web Developer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hunter Mooney",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}

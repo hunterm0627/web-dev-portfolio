@@ -1,0 +1,109 @@
+:root {
+
+    /* COLOR */
+    --primary-color-A: #F6F1F1;
+    --primary-color-B: #AFD3E2;
+    --primary-color-C: #19A7CE;
+    --primary-color-D: #146C94;
+
+    /* GRADIENT A */
+
+    /* --primary-gradient-A: #00d2ff; */
+    /* --primary-gradient-B: #3a7bd5; */
+
+    /* GRADIENT B */
+
+    /* --primary-gradient-A: #1C528A; */
+    /* --primary-gradient-B: #01C8F1; */
+
+    /* GRADIENT C */
+
+    --primary-gradient-A: #19A7CE;
+    --primary-gradient-B: #146C94;
+
+    /* Background */
+
+    background-color: #F6F1F1;
+
+    
+}
+
+.large-header {
+    height: 100px; /* Adjust the height as desired */
+    /* background-color: #f2f2f2; Adjust the background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-text {
+    font-size: 48px; /* Adjust the font size */
+    color: lightslategrey; /* Adjust the text color */
+}
+
+.sec-text {
+    overflow: hidden;
+    color: var(--primary-color-D);
+    border-right: 4px solid var(--primary-color-D); /* Adjust the typewriter cursor style */ 
+    padding-right: 10px; /* Adjust the typewriter cursor spacing */
+    animation: typing 2s steps(20) infinite, blink 1s infinite;
+    white-space: nowrap;
+    width: 0;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent; /* Make the cursor disappear at 50% of the animation */
+    }
+}
+
+/* Analog button idea */
+
+/* .btn-analog {
+    background-color: var(--primary-color-C);
+    box-shadow: var(--primary-color-D) 4px 4px 0px;
+    border-radius: 8px;
+    transition: transform 200ms, box-shadow 200ms;
+}
+
+.btn-analog:active {
+    transform: translateY(4px) translateX(4px);
+    box-shadow: var(--primary-color-D) 0px 0px 0px;
+}
+
+.btn-analog:hover,
+.btn-analog:active {
+    background-color: var(--primary-color-C);
+} */
+
+.bg-gradient-primary-to-secondary {
+    background: #1e30f3;
+    background: linear-gradient(135deg, var(--primary-gradient-A) 0%, var(--primary-gradient-B) 100%);
+}
+
+.bg-gradient-secondary-to-primary {
+    background: #1e30f3;
+    background: linear-gradient(135deg, var(--primary-gradient-B) 0%, var(--primary-gradient-A) 100%);
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, var(--primary-gradient-A) 0%, var(--primary-gradient-B) 100%);
+
+    background: linear-gradient(135deg, var(--primary-gradient-A) 0%, var(--primary-gradient-B) 100%);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-color-A {
+    background-color: var(--primary-color-C);
+}
