@@ -25,27 +25,32 @@
 
     background-color: #F6F1F1;
 
-    
+
 }
 
-.large-header {
-    height: 100px; /* Adjust the height as desired */
+.typer-header {
+    height: 100px;
+    /* Adjust the height as desired */
     /* background-color: #f2f2f2; Adjust the background color */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.header-text {
-    font-size: 48px; /* Adjust the font size */
-    color: lightslategrey; /* Adjust the text color */
+.typer-text {
+    font-size: 48px;
+    /* Adjust the font size */
+    color: lightslategrey;
+    /* Adjust the text color */
 }
 
 .sec-text {
     overflow: hidden;
     color: var(--primary-color-D);
-    border-right: 4px solid var(--primary-color-D); /* Adjust the typewriter cursor style */ 
-    padding-right: 10px; /* Adjust the typewriter cursor spacing */
+    border-right: 4px solid var(--primary-color-D);
+    /* Adjust the typewriter cursor style */
+    padding-right: 10px;
+    /* Adjust the typewriter cursor spacing */
     animation: typing 2s steps(20) infinite, blink 1s infinite;
     white-space: nowrap;
     width: 0;
@@ -55,6 +60,7 @@
     from {
         width: 0;
     }
+
     to {
         width: 100%;
     }
@@ -62,7 +68,8 @@
 
 @keyframes blink {
     50% {
-        border-color: transparent; /* Make the cursor disappear at 50% of the animation */
+        border-color: transparent;
+        /* Make the cursor disappear at 50% of the animation */
     }
 }
 
@@ -104,6 +111,49 @@
     -webkit-text-fill-color: transparent;
 }
 
+.text-color-A {
+    color: var(--primary-color-A);
+}
+
+.text-color-B {
+    color: var(--primary-color-B);
+}
+
+.text-color-C {
+    color: var(--primary-color-C);
+}
+
+.text-color-D {
+    color: var(--primary-color-D);
+}
+
 .btn-color-A {
     background-color: var(--primary-color-C);
+}
+
+/* SVG fill & hover */
+.svg-container {
+    fill: var(--primary-color-D);
+    transition: fill 0.3s ease;
+    /* Add transition effect for smooth color change */
+}
+
+.svg-container:hover {
+    fill: var(--primary-color-C);
+    /* Change to your desired hover color */
+}
+
+.social-color {
+    color: var(--primary-color-D); /* Set the initial color */
+    transition: color 0.3s ease; /* Add transition effect for smooth color change */
+  }
+  
+  .social-color:hover {
+    color: var(--primary-color-C); /* Change to your desired hover color */
+  }
+
+  /* Navbar */
+
+  .navbar-nav .nav-item:hover .nav-link {
+    color: var(--primary-color-D); /* Replace with your desired hover color */
 }
