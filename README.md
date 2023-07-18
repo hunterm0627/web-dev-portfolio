@@ -26,3 +26,5 @@ This repository serves as my junior web developer portfolio, showcasing my proje
 
 Feel free to reach out to me for any inquiries, collaborations, or job opportunities. Thank you for visiting!
 
+ I am also a 3D modeler if you'd like to view my artwork!
+ Artstation: [https://www.artstation.com/oats](https://www.artstation.com/oats)
