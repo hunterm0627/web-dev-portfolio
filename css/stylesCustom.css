@@ -25,7 +25,6 @@
 
     background-color: #F6F1F1;
 
-
 }
 
 .typer-header {
@@ -158,56 +157,65 @@
     color: var(--primary-color-D); /* Replace with your desired hover color */
 }
 
-.award-card {
-    position: relative;
+/* honor award styling */
+
+.thumbnail-img {
+    cursor: pointer;
+    object-fit: cover;
+    max-width: 50%;
+    max-height: auto;
+    border: 0;
+    transition: border-width 0.3s, transform 0.3s;
+    border-style: solid;
+    border-color: var(--primary-color-B);
+}
+.thumbnail-img:hover {
+    border-width:5px;
+    transform: scale(1.09);
+}
+
+/* letter spacing */
+
+.text-spacing-sm {
+    letter-spacing: .05em;
+}
+
+.text-spacing-md {
+    letter-spacing: .1em;
+}
+
+.text-spacing-lg {
+    letter-spacing: 1em;
+}
+
+/* btn hover */
+
+.btn-hover {
+    transition: transform 0.3s ease;
+}
+
+.btn-hover:hover {
+    transform: scale(1.09);
+    color: var(--primary-color-B);
+}
+
+/* projects thumbnail image for 2 images overlayed */
+
+.project-img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
     overflow: hidden;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: #F5F5F5;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.award-card::before {
-    content: '';
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40px;
-    height: 40px;
-    background-color: #FFD700; /* Gold color */
-    border-radius: 50%;
-}
-
-.award-card::after {
-    content: '';
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 20px;
-    background-color: #FFD700; /* Gold color */
-    border-radius: 50%;
-}
-
-.award-card .card-body {
-    padding-top: 40px;
-}
-
-.award-card .card-body::before {
-    content: '🏆'; /* You can use any appropriate icon or image for the award */
-    display: block;
-    font-size: 48px;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.award-card .card-body::after {
-    content: 'Honor Graduate Award'; /* Award title or description */
-    display: block;
-    font-size: 20px;
-    text-align: center;
-    color: #555555;
-    font-weight: bold;
-}
