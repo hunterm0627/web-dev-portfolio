@@ -6,6 +6,7 @@
     --primary-color-C: #19A7CE;
     --primary-color-D: #146C94;
 
+
     /* GRADIENT A */
 
     /* --primary-gradient-A: #00d2ff; */
@@ -26,6 +27,29 @@
     background-color: #F6F1F1;
 
 }
+
+/* Extra bootstrap font sizes */
+.fs-6 {
+    font-size: 1.3rem;
+}
+
+.fs-7 {
+    font-size: 1.5rem;
+}
+
+.fs-8 {
+    font-size: 1.75rem;
+}
+
+.fs-9 {
+    font-size: 2rem;
+}
+
+.fs-10 {
+    font-size: 2.5rem;
+}
+
+/* Typerwriter Effect */
 
 .typer-header {
     height: 100px;
@@ -91,6 +115,8 @@
     background-color: var(--primary-color-C);
 } */
 
+/* Gradient - Background */
+
 .bg-gradient-primary-to-secondary {
     background: #1e30f3;
     background: linear-gradient(135deg, var(--primary-gradient-A) 0%, var(--primary-gradient-B) 100%);
@@ -101,6 +127,8 @@
     background: linear-gradient(135deg, var(--primary-gradient-B) 0%, var(--primary-gradient-A) 100%);
 }
 
+/* Gradient - Text */
+
 .text-gradient {
     background: linear-gradient(135deg, var(--primary-gradient-A) 0%, var(--primary-gradient-B) 100%);
 
@@ -110,6 +138,7 @@
     -webkit-text-fill-color: transparent;
 }
 
+/* Text Color Palette */
 .text-color-A {
     color: var(--primary-color-A);
 }
@@ -143,18 +172,22 @@
 }
 
 .social-color {
-    color: var(--primary-color-D); /* Set the initial color */
-    transition: color 0.3s ease; /* Add transition effect for smooth color change */
-  }
-  
-  .social-color:hover {
-    color: var(--primary-color-C); /* Change to your desired hover color */
-  }
+    color: var(--primary-color-D);
+    /* Set the initial color */
+    transition: color 0.3s ease;
+    /* Add transition effect for smooth color change */
+}
 
-  /* Navbar */
+.social-color:hover {
+    color: var(--primary-color-C);
+    /* Change to your desired hover color */
+}
 
-  .navbar-nav .nav-item:hover .nav-link {
-    color: var(--primary-color-D); /* Replace with your desired hover color */
+/* Navbar */
+
+.navbar-nav .nav-item:hover .nav-link {
+    color: var(--primary-color-D);
+    /* Replace with your desired hover color */
 }
 
 /* honor award styling */
@@ -169,8 +202,9 @@
     border-style: solid;
     border-color: var(--primary-color-B);
 }
+
 .thumbnail-img:hover {
-    border-width:5px;
+    border-width: 5px;
     transform: scale(1.09);
 }
 
@@ -218,4 +252,3 @@
     object-fit: contain;
     overflow: hidden;
 }
-
