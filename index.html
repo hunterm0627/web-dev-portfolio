@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="fonts-loading">
 
 <head>
     <meta charset="utf-8" />
@@ -25,7 +25,7 @@
 <body class="d-flex flex-column h-100">
     <main class="flex-shrink-0">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
             <div class="container px-5">
                 <a class="navbar-brand" href="index.html"><span class="fw-bolder text-gradient">Hunter Mooney</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -87,15 +87,15 @@
                             <h2 class="display-1 fw-bolder"><span class="text-gradient d-inline">About Me</span></h2>
                             <p class="display-3 text-color-B mb-4">Junior Full-Stack Web Developer with a diverse
                                 background in Design.</p>
-                                <p class="text-color-D">
+                                <p class="text-color-D fs-2">
                                     Hello, I'm Hunter Mooney, a recent graduate of the Nucamp Coding Bootcamp. I have a
                                     passion for creating user-friendly, visually appealing web applications. With a strong
                                     foundation in design principles and a comprehensive understanding of front-end and
                                     back-end technologies, I am equipped to bring your ideas to life.
                                 </p>
                                 <p class="text-color-D">
-                                    Throughout my coding journey, I have honed my skills in HTML, CSS, JavaScript, and
-                                    various frameworks such as Bootstrap and React. I thrive in collaborative environments
+                                    Throughout my coding journey, I have honed my skills in <span class="text-color-C fw-bolder">HTML, CSS, JavaScript,</span> and
+                                    various frameworks such as <span class="text-color-C fw-bolder">Bootstrap and React</span>. I thrive in collaborative environments
                                     and enjoy working on projects that challenge me to think creatively and problem-solve.
                                     With my attention to detail and dedication to delivering high-quality work, I am
                                     committed to helping businesses grow and succeed online.
@@ -136,20 +136,42 @@
             </div>
         </section>
     </main>
+
     <!-- Footer-->
-    <footer class="bg-gradient-primary-to-secondary text-color-A py-4 mt-auto">
-        <div class="container px-5">
-            <div class="row align-items-center justify-content-center">
+
+    <footer class="bg-gradient-primary-to-secondary text-white py-4 mt-auto">
+        <div class="container px-5 py-3">
+            <div class="row align-items-center justify-content-between">
+                <!-- Name and year -->
                 <div class="col-auto">
-                    <div class="small m-0">© 2023 Hunter Mooney</div>
+                    <div class="small m-0 text-color-A">© 2023 Hunter Mooney</div>
+                </div>
+                <!-- Page links  -->
+                <div class="col-auto">
+                    <ul class="list-inline m-0">
+                        <li class="list-inline-item">
+                            <a href="index.html" class="text-color-A">Home</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="projects.html" class="text-color-A">Projects</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-color-A">Resume</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="contact.html" class="text-color-A">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </footer>
+    
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <script src="js/FOUT.js"></script>
 </body>
 
 </html>

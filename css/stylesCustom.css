@@ -2,30 +2,44 @@
 
     /* COLOR */
     --primary-color-A: #F6F1F1;
-    --primary-color-B: #AFD3E2;
-    --primary-color-C: #19A7CE;
-    --primary-color-D: #146C94;
-
+    --primary-color-B: #38AFFF;
+    --primary-color-C: #069AFD;
+    --primary-color-D: #3a7bd5;
+    --primary-color-E: #FDD408;
+    --primary-color-F: #2c2c2c;
 
     /* GRADIENT A */
 
-    /* --primary-gradient-A: #00d2ff; */
-    /* --primary-gradient-B: #3a7bd5; */
-
-    /* GRADIENT B */
-
-    /* --primary-gradient-A: #1C528A; */
-    /* --primary-gradient-B: #01C8F1; */
-
-    /* GRADIENT C */
-
-    --primary-gradient-A: #19A7CE;
-    --primary-gradient-B: #146C94;
+    --primary-gradient-A: #069afd;
+    --primary-gradient-B: #397ad5;
 
     /* Background */
 
     background-color: #F6F1F1;
 
+}
+
+/* ////////////////////////////////// */
+/* ////////////////////////////////// */
+/* ////////////////////////////////// */
+
+/* flash of unstyled text logic - FOUT */
+/* Hide the content initially */
+.fonts-loading body {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 300ms, opacity 300ms;
+}
+
+/* Display the content when the font is ready */
+.fonts-loaded body {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Font */
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Extra bootstrap font sizes */
@@ -155,6 +169,15 @@
     color: var(--primary-color-D);
 }
 
+.text-color-E {
+    color: var(--primary-color-E);
+}
+
+.text-color-F {
+    color: var(--primary-color-F);
+}
+
+
 .btn-color-A {
     background-color: var(--primary-color-C);
 }
@@ -190,6 +213,7 @@
     /* Replace with your desired hover color */
 }
 
+
 /* honor award styling */
 
 .thumbnail-img {
@@ -206,6 +230,10 @@
 .thumbnail-img:hover {
     border-width: 5px;
     transform: scale(1.09);
+}
+
+.border-color-custom {
+    border-color: var(--primary-color-E);
 }
 
 /* letter spacing */
