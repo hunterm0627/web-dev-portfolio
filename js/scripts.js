@@ -42,18 +42,35 @@ window.addEventListener('DOMContentLoaded', type);
 
 // Phone Logic
 
-document.addEventListener('DOMContentLoaded', function() {
-    var phoneInput = document.getElementById('phone');
 
-    // Apply input mask
-    Inputmask({ mask: "+1(999) 999-9999" }).mask(phoneInput);
+const phoneInput = document.getElementById("phone");
 
-    phoneInput.addEventListener('input', function() {
-        // Remove non-numeric characters
-        var input = phoneInput.value.replace(/\D/g, '');
+// Function to format the phone number as it is typed in
+function formatPhoneNumber() {
+    const phoneNumber = phoneInput.value.replace(/\D/g, ''); // Remove all non-numeric characters
+    const areaCode = phoneNumber.substring(0, 3);
+    const middlePart = phoneNumber.substring(3, 6);
+    const lastPart = phoneNumber.substring(6, 10);
 
-        // Set the value without formatting for form submission
-        phoneInput.dataset.unmaskedValue = input;
-    });
-});
+    if (phoneNumber.length > 6) {
+        phoneInput.value = `(${areaCode}) ${middlePart}-${lastPart}`;
+    } else if (phoneNumber.length > 3) {
+        phoneInput.value = `(${areaCode}) ${middlePart}`;
+    } else if (phoneNumber.length > 0) {
+        phoneInput.value = `(${areaCode}`;
+    } else {
+        phoneInput.value = '';
+    }
+    
+    // Enable or disable the submit button based on the phone number length
 
+    if (phoneInput.value.replace(/\D/g, '').length === 10) {
+        submitButton.disabled = false;
+    } else {
+        submitButton.disabled = true;
+    }
+}
+
+
+// Event listener for the input event to handle formatting and restrict to numbers only
+phoneInput.addEventListener("input", formatPhoneNumber);

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content />
     <meta name="author" content />
-    <title>Modern Business - Start Bootstrap Template</title>
+    <title>Contact!</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Custom Google font-->
@@ -74,12 +74,11 @@
                                 </div>
                                 <!-- Phone number input-->
                                 <div class="form-floating mb-3">
-                                    <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
-                                        data-sb-validations="required" />
+                                    <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" pattern="[0-9]+" />
                                     <label for="phone">Phone number</label>
-                                    <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is
-                                        required.</div>
+                                    <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                                 </div>
+                            
                                 <!-- Message input-->
                                 <div class="form-floating mb-3">
                                     <textarea class="form-control" id="message" type="text"
@@ -96,7 +95,8 @@
                                 <div class="d-none" id="submitSuccessMessage">
                                     <div class="text-center mb-3">
                                         <div class="alert alert-success" role="alert">
-                                            Message was sent successfully -- thank you!
+                                            <i class="bi bi-check-circle-fill"></i>
+                                            Message was sent successfully. Thank you!
                                         </div>
                                         <br />
                                     </div>

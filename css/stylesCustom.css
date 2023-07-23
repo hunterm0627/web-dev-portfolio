@@ -149,6 +149,7 @@ body {
     background: linear-gradient(135deg, var(--primary-gradient-A) 0%, var(--primary-gradient-B) 100%);
 
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -250,6 +251,11 @@ body {
     letter-spacing: 1em;
 }
 
+/* line height --> resume job locations */
+.name-line-height {
+    line-height: 2.4rem;
+}
+
 /* btn hover */
 
 .btn-hover {
@@ -279,4 +285,46 @@ body {
     max-height: 100%;
     object-fit: contain;
     overflow: hidden;
+}
+
+/* Carousel captions and arrow buttons */
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent black background */
+    color: #fff;
+    /* White text color */
+    font-size: 24px;
+    /* Increase font size for captions */
+    padding: 10px;
+    /* Add some padding for better visual separation */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent black background for buttons */
+    border-radius: 50%;
+    /* Round the buttons */
+    width: 40px;
+    /* Increase button size */
+    height: 40px;
+    top: 50%;
+    /* Center vertically within the carousel */
+    transform: translateY(-50%);
+    opacity: 0.7;
+    /* Reduce opacity by default */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+    /* Increase opacity on hover for better visibility */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    /* You can use custom arrow icons or larger icons here for better visibility */
+    width: 20px;
+    height: 20px;
 }
