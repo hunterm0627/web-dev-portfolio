@@ -83,8 +83,8 @@ body {
 
 .sec-text {
     overflow: hidden;
-    color: var(--primary-color-D);
-    border-right: 4px solid var(--primary-color-D);
+    color: var(--primary-color-C);
+    border-right: 4px solid var(--primary-color-C);
     /* Adjust the typewriter cursor style */
     padding-right: 10px;
     /* Adjust the typewriter cursor spacing */
@@ -185,25 +185,25 @@ body {
 
 /* SVG fill & hover */
 .svg-container {
-    fill: var(--primary-color-D);
+    fill: var(--primary-color-C);
     transition: fill 0.3s ease;
     /* Add transition effect for smooth color change */
 }
 
 .svg-container:hover {
-    fill: var(--primary-color-C);
+    fill: var(--primary-color-D);
     /* Change to your desired hover color */
 }
 
 .social-color {
-    color: var(--primary-color-D);
+    color: var(--primary-color-C);
     /* Set the initial color */
     transition: color 0.3s ease;
     /* Add transition effect for smooth color change */
 }
 
 .social-color:hover {
-    color: var(--primary-color-C);
+    color: var(--primary-color-D);
     /* Change to your desired hover color */
 }
 
@@ -212,6 +212,22 @@ body {
 .navbar-nav .nav-item:hover .nav-link {
     color: var(--primary-color-D);
     /* Replace with your desired hover color */
+}
+
+.scroll-box {
+    max-height: 400px; /* Adjust the height as per your requirements */
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.vertical-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 

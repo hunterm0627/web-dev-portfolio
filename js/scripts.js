@@ -44,6 +44,7 @@ window.addEventListener('DOMContentLoaded', type);
 
 
 const phoneInput = document.getElementById("phone");
+const submitButton = document.getElementById("submitButton");
 
 // Function to format the phone number as it is typed in
 function formatPhoneNumber() {
@@ -74,3 +75,40 @@ function formatPhoneNumber() {
 
 // Event listener for the input event to handle formatting and restrict to numbers only
 phoneInput.addEventListener("input", formatPhoneNumber);
+
+
+// Enable or disable the submit button based on the phone number length
+document.addEventListener('DOMContentLoaded', () => {
+    const submitButton = document.getElementById("submitButton");
+    
+    phoneInput.addEventListener("input", () => {
+        const phoneNumber = phoneInput.value.replace(/\D/g, ''); // Remove all non-numeric characters
+        if (phoneNumber.length === 10) {
+            submitButton.disabled = false;
+        } else {
+            submitButton.disabled = true;
+        }
+    });
+});
+
+document.getElementById("contactForm").addEventListener("submit", function (event) {
+    const nameInput = document.getElementById("name");
+    const emailInput = document.getElementById("email");
+    const messageInput = document.getElementById("message");
+
+    // Check if any of the required fields are empty
+    if (!nameInput.value.trim() || !emailInput.value.trim() || !phoneInput.value.trim() || !messageInput.value.trim()) {
+        // Prevent the form submission if any of the required fields are empty
+        event.preventDefault();
+
+        // Show an error message or perform other actions to notify the user that all fields are required
+        // For example, you can display an error message below the form:
+        const errorMessageElement = document.getElementById("errorMessage");
+        errorMessageElement.innerText = "Please fill in all required fields.";
+    } else {
+        // All required fields have values, the form can be submitted
+        // You can also remove the error message if it was shown before:
+        const errorMessageElement = document.getElementById("errorMessage");
+        errorMessageElement.innerText = "";
+    }
+});
