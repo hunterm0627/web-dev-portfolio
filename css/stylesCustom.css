@@ -303,6 +303,7 @@ body {
     overflow: hidden;
 }
 
+
 /* Carousel captions and arrow buttons */
 
 .carousel-caption {
@@ -344,3 +345,55 @@ body {
     width: 20px;
     height: 20px;
 }
+
+/* FUN facts */
+
+.fact-card {
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+    transition: background-blend-mode 0.5s ease, transform 0.5s ease;
+    transform-origin: center;
+    border-radius: 3rem;
+    background-color: var(--primary-color-F);
+    box-shadow: 0 0 10px var(--primary-color-F);
+}
+
+/* Styles for the fading text */
+.fade-text {
+    opacity: 1; /* Initial opacity */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Add the transition for opacity and transform */
+    color: white;
+    user-select: none;
+}
+
+/* On hover, fade the text to 0 opacity and scale it slightly */
+.fact-card:hover .fade-text {
+    opacity: 0;
+    transform: scale(1.03); /* Scale the text slightly on hover off */
+}
+
+/* On hover, change the blend mode to normal and scale the background */
+.fact-card:hover {
+    background-blend-mode: normal;
+    transform: scale(1.03);
+}
+
+/* home page profile picture  */
+
+.profile-img {
+    overflow: hidden; /* This ensures that the image won't overflow its container */
+}
+
+.profile-img img {
+    transition: transform 0.3s ease; /* Apply transition for smooth scaling effect */
+}
+
+/* Add hover effect to scale the image up */
+.profile-img:hover img {
+    transform: scale(1.1); /* Increase the scale value to make the image larger on hover */
+}
+
+

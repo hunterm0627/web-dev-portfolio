@@ -24,7 +24,7 @@
 </head>
 
 <body class="d-flex flex-column h-100">
-    <main class="flex-shrink-0">
+    <main class="flex-shrink-0 bg-light">
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
             <div class="container px-5">
@@ -35,7 +35,7 @@
                         class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
                         <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -66,13 +66,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-5">
-                        <!-- Art asset -->
-                        <div class="d-flex justify-content-center justify-content-xxl-end mt-5 mt-xxl-0">
-                            <img class="profile-img p-3" src="./assets/images/devArt-01.png" width="500" height="auto"
-                                alt="generic computer vector art" />
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </header>
@@ -82,20 +76,31 @@
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
                     <!-- Image column -->
-                    <div class="col-lg-5">
-                        <img class="img-fluid shadow border border-3 border-primary rounded-4" style="width: 400px; aspect-ratio: 1 / 1; object-fit: cover" src="./assets/images/hunterProfile.jpg" alt="Hunter Moone profile image">
+                    <div class="col-lg-5 d-flex justify-content-center">
+                        <div class="profile-img  shadow border border-5 rounded-5">
+                            <img class="img-fluid"
+                                style="width: 400px; aspect-ratio: 1 / 1; object-fit: cover"
+                                src="./assets/images/hunterProfile.jpg" alt="Hunter Mooney profile image">
+                        </div>
                     </div>
                     <!-- Text column -->
                     <div class="col-lg-7 mt-5 mt-lg-0">
                         <h2 class="display-4 fw-bold">Hello!</h2>
-                        <p class="lead">I'm Hunter Mooney, a recent graduate of the Nucamp Coding Bootcamp. I have a passion for creating user-friendly, visually appealing web applications. With a strong foundation in design principles and a comprehensive understanding of front-end and back-end technologies, I am equipped to bring your ideas to life.</p>
-                        <p>Throughout my coding journey, I have honed my skills in <span class="fw-bold">HTML, CSS, JavaScript,</span> and various frameworks such as <span class="fw-bold">Bootstrap and React</span>. I thrive in collaborative environments and enjoy working on projects that challenge me to think creatively and problem-solve. With my attention to detail and dedication to delivering high-quality work, I am committed to helping businesses grow and succeed online.</p>
+                        <p class="fs-4">I'm Hunter Mooney, a recent graduate of the Nucamp Coding Bootcamp. I have a
+                            passion for creating user-friendly, visually appealing web applications. With a strong
+                            foundation in design principles and a comprehensive understanding of front-end and back-end
+                            technologies, I am equipped to bring your ideas to life.</p>
+                        <p class="lead">Throughout my coding journey, I have honed my skills in <span class="fw-bold">HTML, CSS,
+                                JavaScript,</span> and various frameworks such as <span class="fw-bold">Bootstrap and
+                                React</span>. I thrive in collaborative environments and enjoy working on projects that
+                            challenge me to think creatively and problem-solve.</p>
 
                     </div>
                 </div>
             </div>
             <!-- Social Links -->
-            <div class="mt-5" style="display: flex; justify-content: center; align-items: center; gap: 50px; font-size: 2rem;">
+            <div class="mt-5"
+                style="display: flex; justify-content: center; align-items: center; gap: 10rem; font-size: 4rem;">
                 <a class="social-color" href="https://www.linkedin.com/in/hunter-mooney-23b7b421b/">
                     <i class="bi bi-linkedin"></i>
                 </a>
@@ -103,9 +108,12 @@
                     <i class="bi bi-github"></i>
                 </a>
                 <a class="svg-container" href="https://artstation.com/oats">
-                    <svg width="32" height="auto" viewBox="0 0 24 24" style="display: flex; justify-content: center; align-items: center;" role="img" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="4rem" height="auto" viewBox="0 0 24 24"
+                        style="display: flex; justify-content: center; align-items: center;" role="img"
+                        xmlns="http://www.w3.org/2000/svg">
                         <title>ArtStation icon</title>
-                        <path d="M0 17.723l2.027 3.505h.001a2.424 2.424 0 0 0 2.164 1.333h13.457l-2.792-4.838H0zm24 .025c0-.484-.143-.935-.388-1.314L15.728 2.728a2.424 2.424 0 0 0-2.142-1.289H9.419L21.598 22.54l1.92-3.325c.378-.637.482-.919.482-1.467zm-11.129-3.462L7.428 4.858l-5.444 9.428h10.887z" />
+                        <path
+                            d="M0 17.723l2.027 3.505h.001a2.424 2.424 0 0 0 2.164 1.333h13.457l-2.792-4.838H0zm24 .025c0-.484-.143-.935-.388-1.314L15.728 2.728a2.424 2.424 0 0 0-2.142-1.289H9.419L21.598 22.54l1.92-3.325c.378-.637.482-.919.482-1.467zm-11.129-3.462L7.428 4.858l-5.444 9.428h10.887z" />
                     </svg>
                 </a>
             </div>
@@ -116,6 +124,7 @@
                     <span class="sec-text"></span>
                 </h1>
             </div>
+
         </section>
     </main>
 
