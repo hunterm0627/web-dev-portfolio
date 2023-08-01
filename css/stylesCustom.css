@@ -66,7 +66,7 @@ body {
 /* Typerwriter Effect */
 
 .typer-header {
-    height: 100px;
+    height: 1rem;
     /* Adjust the height as desired */
     /* background-color: #f2f2f2; Adjust the background color */
     display: flex;
@@ -76,16 +76,16 @@ body {
 }
 
 .typer-text {
-    font-size: 48px;
+    font-size: 3rem;
     /* Adjust the font size */
-    color: lightslategrey;
+    color: var(--primary-color-F);
     /* Adjust the text color */
 }
 
 .sec-text {
     overflow: hidden;
     color: var(--primary-color-C);
-    border-right: 4px solid var(--primary-color-C);
+    border-right: 4px solid var(--primary-color-F);
     /* Adjust the typewriter cursor style */
     padding-right: 10px;
     /* Adjust the typewriter cursor spacing */
