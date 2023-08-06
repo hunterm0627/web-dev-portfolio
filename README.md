@@ -2,7 +2,7 @@
 
 This repository serves as my junior web developer portfolio, showcasing my projects and skills in web development. It's a work in progress, continuously updated as I expand my knowledge and gain more experience, finish school. Actively looking for a job to make a career switch!
 
-## Projects
+<!-- ## Projects -->
 
 <!-- - Project 1: Brief description of Project 1. [Live Demo](https://example.com) | [GitHub Repo](https://github.com/username/project1) 
 - Project 2: Brief description of Project 2. [Live Demo](https://example.com) | [GitHub Repo](https://github.com/username/project2)
